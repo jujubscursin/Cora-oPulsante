@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 .pulsante{
-    background:red;
+    background:pink;
     position: relative;
     height: 100px;
     width: 100px;
@@ -14,7 +14,7 @@ body {
     animation: pulsar 1s ease infinite
 }
 .pulsante::after{
-    background:red;
+    background:pink;
     content:'';
     position:absolute;
     top: -50%;
@@ -24,7 +24,7 @@ body {
     border-radius: 50%;
 }
 .pulsante::before{
-    background:red;
+    background:pink;
     content:'';
     position:absolute;
     top: 0;
