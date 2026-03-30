@@ -1,0 +1,47 @@
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.pulsante{
+    background:red;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    transform:rotate(-45deg) scale(1);
+    animation: pulsar 1s ease infinite
+}
+.pulsante::after{
+    background:red;
+    content:'';
+    position:absolute;
+    top: -50%;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.pulsante::before{
+    background:red;
+    content:'';
+    position:absolute;
+    top: 0;
+    right: -50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+@keyframes pulsar {
+    0%{
+        transform: rotate(-45deg) scale(1);
+    }
+    50%{
+        transform: rotate(-45deg) scale(1.5);
+    }
+    100%{
+        transform: rotate(-45deg) scale(1);
+    }
+}
